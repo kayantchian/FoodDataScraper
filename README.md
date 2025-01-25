@@ -4,11 +4,6 @@
   <a>
     <img src="images/logo.png" alt="Logo">
   </a>
-
-  <h3 align="center">PyTr0j4n</h3>
-
-  <p align="center">
-    A trojan made in python
 </div>
 
 FoodDataScraper is a browser extension that performs **web scraping** on predefined restaurant menu websites. It collects data from these menus and generates automated spreadsheets, optimizing the internal menu registration process for businesses.
