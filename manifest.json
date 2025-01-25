@@ -1,0 +1,79 @@
+{
+  "manifest_version": 3,
+  "name": "FoodDataScraper",
+  "version": "1.0.1",
+  "description": "A browser extension created by Kayan Tchian to automate the extraction of restaurant menu data from various platforms, organizing the information into structured spreadsheets for efficient data management.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "webNavigation"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.ico",
+      "48": "icons/icon48.ico",
+      "128": "icons/icon128.ico"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.anota.ai/*",
+        "https://*.menudino.com/*", 
+        "https://*.goomer.app/*",
+        "https://doce-reino.com/*",
+        "https://*.olaclick.net/*",
+        "https://*.ola.click/*",
+        "https://instadelivery.com.br/*",
+        "https://www.hubt.com.br/*",
+        "https://app.jotaja.com/*",
+        "https://*.yooga.app/*",
+        "https://*.cardapiodigital.io/*",
+        "https://www.diggy.menu/*",
+        "https://*.saipos.com/*",
+        "https://deliveryapp.neemo.com.br/*",
+        "https://*.kitaltemaki.com.br//*",
+        "https://*.cardapioweb.com/*",
+        "https://braseroburguer.com.br/*",
+        "https://web.whatsapp.com/",
+        "https://www.kitaltemaki.com.br/*",
+        "https://semola.strelo.com.br/*",
+        "https://www.vucafood.com.br/*",
+        "<all_urls>",
+        "https://delivery.devorepizza.com.br/*",
+        "https://espacocarreirolanches.com.br/*",
+        "https://delivery.rota202.com.br/*",
+        "https://deliverydireto.com.br/*"
+      ],
+      "js": [
+        "papaparse.min.js",
+        "scrapys/anotai.js",
+        "scrapys/menudino.js",
+        "scrapys/olaclick.js",
+        "scrapys/goomer.js",
+        "scrapys/instadelivery.js",
+        "scrapys/hubt.js",
+        "scrapys/jotaja.js",
+        "scrapys/yooga.js",
+        "scrapys/diggy.js",
+        "scrapys/cardapiodigital.js",
+        "scrapys/saipos.js",
+        "scrapys/cardapioweb.js",
+        "scrapys/coisaRuim.js",
+        "scrapys/neemo.js",
+        "scrapys/whatsApp.js",
+        "scrapys/semola.js",
+        "handlerScrapy.js",
+        "sheet_generation.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.ico",
+    "48": "icons/icon48.ico",
+    "128": "icons/icon128.ico"
+  }
+}
