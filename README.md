@@ -41,3 +41,6 @@ FoodDataScraper is a browser extension that performs **web scraping** on predefi
 3. Select the corresponding restaurant from the dropdown menu in the extension.
 4. Click the **Collect Data** button to start scraping the menu data.
 5. After the scraping process is complete, the extension will automatically generate a CSV file for download with the extracted information.
+
+## License
+This project is licensed under the **MIT License** - see the **[LICENSE](LICENSE)** file for details.
