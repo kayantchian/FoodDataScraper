@@ -9,14 +9,6 @@
     "scripting",
     "webNavigation"
   ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/icon16.ico",
-      "48": "icons/icon48.ico",
-      "128": "icons/icon128.ico"
-    }
-  },
   "content_scripts": [
     {
       "matches": [
@@ -34,14 +26,13 @@
         "https://www.diggy.menu/*",
         "https://*.saipos.com/*",
         "https://deliveryapp.neemo.com.br/*",
-        "https://*.kitaltemaki.com.br//*",
+        "https://*.kitaltemaki.com.br/*",
         "https://*.cardapioweb.com/*",
         "https://braseroburguer.com.br/*",
         "https://web.whatsapp.com/",
         "https://www.kitaltemaki.com.br/*",
         "https://semola.strelo.com.br/*",
         "https://www.vucafood.com.br/*",
-        "<all_urls>",
         "https://delivery.devorepizza.com.br/*",
         "https://espacocarreirolanches.com.br/*",
         "https://delivery.rota202.com.br/*",
@@ -70,10 +61,5 @@
       ],
       "all_frames": true
     }
-  ],
-  "icons": {
-    "16": "icons/icon16.ico",
-    "48": "icons/icon48.ico",
-    "128": "icons/icon128.ico"
-  }
+  ]
 }
