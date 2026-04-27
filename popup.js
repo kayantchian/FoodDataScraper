@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const coletarDadosButton = document.getElementById('coletarDados');
-  const restauranteCheckbox = document.getElementById('restauranteCheckbox');
+  const coletarDadosButton = document.getElementById('collectData');
+const restauranteCheckbox = document.getElementById('restaurantSelector');
 
   // Função para obter o nome do restaurante a partir da URL
   function getRestaurantFromUrl(url) {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
       { urlPattern: /^https:\/\/.*\.goomer\.app\/.*/, value: "Goomer" },
       { urlPattern: /^https:\/\/.*\.ola\.click\/.*/, value: "OlaClick" },
       { urlPattern: /^https:\/\/.*\.olaclick\.net\/.*/, value: "OlaClick" },
-      { urlPattern: /^https:\/\/.*\web\.whatsapp\.com\/.*/, value: "WhatsApp" },
+      { urlPattern: /^https:\/\/web\.whatsapp\.com\/.*/, value: "WhatsApp" },
       { urlPattern: /^https:\/\/instadelivery\.com\.br\/.*/, value: "InstaDelivery" },
       { urlPattern: /^https:\/\/www\.hubt\.com\.br\/.*/, value: "Hubt" },
       { urlPattern: /^https:\/\/deliverydireto\.com\.br\/.*/, value: "Coisa Ruim" },

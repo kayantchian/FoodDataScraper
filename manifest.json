@@ -9,6 +9,9 @@
     "scripting",
     "webNavigation"
   ],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -33,6 +36,7 @@
         "https://www.kitaltemaki.com.br/*",
         "https://semola.strelo.com.br/*",
         "https://www.vucafood.com.br/*",
+        "<all_urls>",
         "https://delivery.devorepizza.com.br/*",
         "https://espacocarreirolanches.com.br/*",
         "https://delivery.rota202.com.br/*",
